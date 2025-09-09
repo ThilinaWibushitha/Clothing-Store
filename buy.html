@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy</title>
+    <link rel="icon" type="image/png" href="./Assets/logo.png" />
+    <link rel="stylesheet" href="../CSS/Main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="buy_container">
+      <div class="buy_row">
+        <div class="buy_form-wrapper">
+          <div class="buy_panel">
+            <div class="buy_panel-heading">
+              <h3 class="buy_text-center">Payment Details</h3>
+              <img
+                class="buy_cc-img"
+                src="http://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png"
+                alt="Credit Card Icons"
+              />
+            </div>
+            <div class="buy_panel-body">
+              <form id="payment-form">
+                <div class="buy_form-group">
+                  <label class="buy_label">CARD NUMBER</label>
+                  <input
+                    type="tel"
+                    id="card-number"
+                    class="buy_input"
+                    placeholder="Valid Card Number"
+                  />
+                </div>
+                <div class="buy_form-row">
+                  <div class="buy_form-group buy_half-width">
+                    <label class="buy_label">EXPIRATION DATE</label>
+                    <input
+                      type="tel"
+                      id="exp-date"
+                      class="buy_input"
+                      placeholder="MM / YY"
+                    />
+                  </div>
+                  <div class="buy_form-group buy_half-width">
+                    <label class="buy_label">CV CODE</label>
+                    <input
+                      type="tel"
+                      id="cv-code"
+                      class="buy_input"
+                      placeholder="CVC"
+                    />
+                  </div>
+                </div>
+                <div class="buy_form-group">
+                  <label class="buy_label">CARD OWNER</label>
+                  <input
+                    type="text"
+                    id="card-owner"
+                    class="buy_input"
+                    placeholder="Card Owner Names"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="buy_panel-footer">
+              <button id="buy-btn" class="buy_btn">Process payment</button>
+            </div>
+            <div id="payment-feedback" class="buy_feedback"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Link JavaScript -->
+    <script type="module" src="./Js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+/* General Styling for the Register Section */
+.register-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styling for the Form Container */
+.reg-form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background: rgba(109, 109, 109, 0.38);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+.register-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Label Styling */
+.form-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input and Textarea Styling */
+#first-name,
+#last-name,
+#user-address,
+#user-username,
+#user-email,
+#user-password,
+#confirm-password,
+#user-role {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    margin-bottom: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Specific Styling for Textarea */
+#user-address {
+    resize: none;
+}
+
+/* Focus Effects for Inputs and Textarea */
+#first-name:focus,
+#last-name:focus,
+#user-address:focus,
+#user-username:focus,
+#user-email:focus,
+#user-password:focus,
+#confirm-password:focus,
+#user-role:focus {
+    border-color: #b30000;
+    box-shadow: 0 0 5px rgba(179, 0, 0, 0.5);
+}
+
+/* Role Dropdown Styling */
+#user-role {
+    background: #fff url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23000" d="M2 0L0 2h4zM0 3l2 2 2-2z"/></svg>') no-repeat right 5px center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Register Button Styling */
+.register-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: #b30000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #800000;
+}
+
+/* Cancel Button Styling */
+.cancel-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: #8a8b8b91;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover {
+    background-color: #666666;
+}
+
+/* Login Link Styling */
+#reg-login-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #8a8b8b91;
+}
+
+#reg-login-link a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+#reg-login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 500px) {
+    .reg-form-container {
+        padding: 20px;
+    }
+
+    .register-title {
+        font-size: 20px;
+    }
+
+    .register-btn,
+    .cancel-btn {
+        font-size: 14px;
+    }
+}

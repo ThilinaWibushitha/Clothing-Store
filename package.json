@@ -1,0 +1,89 @@
+{
+  "name": "velvet-vogue-ecommerce",
+  "version": "2.0.0",
+  "description": "Premium fashion e-commerce platform with modern UI/UX, secure backend, and comprehensive testing",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd backend && php -S localhost:8000",
+    "start": "cd backend && php -S localhost:8000",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "npm run minify:css",
+    "build:js": "npm run minify:js",
+    "minify:css": "echo 'CSS minification would go here'",
+    "minify:js": "echo 'JS minification would go here'",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "echo 'Unit tests would go here'",
+    "test:e2e": "cypress run",
+    "test:e2e:open": "cypress open",
+    "test:e2e:headless": "cypress run --headless",
+    "lint": "npm run lint:css && npm run lint:js",
+    "lint:css": "echo 'CSS linting would go here'",
+    "lint:js": "echo 'JS linting would go here'",
+    "format": "npm run format:css && npm run format:js",
+    "format:css": "echo 'CSS formatting would go here'",
+    "format:js": "echo 'JS formatting would go here'",
+    "install-backend": "cd backend && composer install",
+    "install-all": "npm install && npm run install-backend",
+    "serve": "cd backend && php -S localhost:8000",
+    "security:audit": "npm audit",
+    "security:fix": "npm audit fix",
+    "performance:lighthouse": "echo 'Lighthouse audit would go here'",
+    "accessibility:audit": "echo 'Accessibility audit would go here'",
+    "seo:audit": "echo 'SEO audit would go here'",
+    "clean": "rm -rf node_modules package-lock.json && cd backend && rm -rf vendor composer.lock",
+    "fresh-install": "npm run clean && npm run install-all"
+  },
+  "keywords": [
+    "ecommerce",
+    "fashion",
+    "clothing",
+    "php",
+    "mongodb",
+    "javascript",
+    "responsive",
+    "accessibility",
+    "testing",
+    "cypress"
+  ],
+  "author": {
+    "name": "Velvet Vogue Team",
+    "email": "info@velvetvogue.com",
+    "url": "https://velvetvogue.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/velvetvogue/ecommerce-platform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/velvetvogue/ecommerce-platform/issues"
+  },
+  "homepage": "https://velvetvogue.com",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0",
+    "php": ">=7.4.0"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "stylelint": "^16.2.1",
+    "lighthouse": "^11.7.0",
+    "pa11y": "^8.0.0"
+  },
+  "dependencies": {
+    "lazysizes": "^5.3.2",
+    "intersection-observer": "^0.12.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "config": {
+    "port": 8000,
+    "host": "localhost"
+  }
+}

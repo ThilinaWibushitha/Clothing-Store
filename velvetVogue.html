@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Velvet Vogue - Premium fashion clothing store offering stylish apparel for men, women, and kids. Shop the latest trends and seasonal collections." />
+    <meta name="keywords" content="fashion, clothing, apparel, men, women, kids, style, trendy, boutique" />
+    <meta name="author" content="Velvet Vogue" />
+    <title>Velvet Vogue - Premium Fashion Store</title>
+    <link rel="icon" type="image/png" href="./Assets/logo.png" />
+    <link rel="stylesheet" href="./CSS/Main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Velvet Vogue",
+      "description": "Premium fashion clothing store",
+      "url": "https://velvetvogue.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Colombo",
+        "addressRegion": "Western Province",
+        "postalCode": "11000",
+        "addressCountry": "LK"
+      },
+      "telephone": "+94-110-234-546",
+      "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-brand">
+          <a href="./velvetVogue.html" aria-label="Velvet Vogue Home">
+            <img id="logo" src="./Assets/logo.png" alt="Velvet Vogue Logo" />
+          </a>
+        </div>
+        <div class="menu">
+          <a href="./velvetVogue.html" aria-current="page">Home</a>
+          <a href="./aboutUs.html">About Us</a>
+          <a href="./shop.html">Shop</a>
+          <a href="./login.html">My Account</a>
+          <a href="./cart.html" aria-label="Shopping Cart">
+            <img src="./Assets/icons8-cart-48.png" alt="Cart" />
+            <span class="cart-count" aria-live="polite">0</span>
+          </a>
+          <div class="search-container">
+            <label for="search" class="sr-only">Search products</label>
+            <input 
+              type="text" 
+              id="search" 
+              placeholder="Search products..." 
+              aria-label="Search products"
+              autocomplete="off"
+            />
+            <button id="btn-search" type="button" aria-label="Search">
+              <img src="./Assets/icons8-search-30.png" alt="Search" />
+            </button>
+          </div>
+        </div>
+        <!-- Mobile menu toggle -->
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section class="hero-section" aria-label="Featured promotions">
+        <div class="core-slider" role="region" aria-label="Image carousel">
+          <div class="img-slider active" role="group" aria-roledescription="slide">
+            <img 
+              src="./Assets/fashion-clothing-hangers-show.jpg" 
+              alt="Modern clothing store interior with stylish hangers displaying fashionable apparel" 
+              loading="eager"
+            />
+            <div class="info">
+              <h2>Welcome to Velvet Vogue</h2>
+              <p>
+                Discover premium fashion that defines your unique style. From casual wear to elegant 
+                formal attire, we curate the finest collection for every occasion and every season.
+              </p>
+              <a href="./aboutUs.html" class="cta-button">Learn More</a>
+            </div>
+          </div>
+          <div class="img-slider" role="group" aria-roledescription="slide">
+            <img 
+              src="./Assets/SL-071921-44430-29.jpg" 
+              alt="Special discount promotion showcasing stylish clothing at reduced prices" 
+              loading="lazy"
+            />
+            <div class="info">
+              <h2>Special Discount</h2>
+              <p>
+                Up to 50% Off! Grab your favorite styles at unbeatable prices.
+                Limited time only!
+              </p>
+              <a href="./shop.html" class="cta-button">Shop Now</a>
+            </div>
+          </div>
+          <div class="img-slider" role="group" aria-roledescription="slide">
+            <img
+              src="./Assets/stack-cozy-knitted-sweaters-autumn-winter-concept-knitted-wool-sweaters-pile-knitted-winter-clothes-sweaters-knitwear.jpg"
+              alt="Cozy knitted sweaters and winter clothing collection"
+              loading="lazy"
+            />
+            <div class="info">
+              <h2>Seasonal Collection</h2>
+              <p>
+                Gear up for the season with our exclusive seasonal collection.
+                Stay stylish, stay comfortable!
+              </p>
+              <a href="./shop.html" class="cta-button">Explore Collection</a>
+            </div>
+          </div>
+          <button id="preview" class="slider-btn" aria-label="Previous slide">&#10092;</button>
+          <button id="next" class="slider-btn" aria-label="Next slide">&#10093;</button>
+        </div>
+      </section>
+      <section class="categories-section" aria-label="Product categories">
+        <div class="container">
+          <h2 class="title">Shop by Category</h2>
+        </div>
+        <!-- Best Category Slider -->
+        <div class="slider-container best-category" role="region" aria-label="Category carousel">
+          <button class="preview" aria-label="Previous categories">&#8249;</button>
+          <div class="crd--wrapper">
+            <div class="crd--container">
+              <article class="card">
+                <div class="crd--img">
+                  <img src="./Assets/kids.jpg" alt="Kids clothing collection" loading="lazy" />
+                </div>
+                <div class="crd--data">
+                  <h3 class="crd--title">Kids</h3>
+                  <button class="crd--open" aria-label="Browse kids clothing">Shop Kids</button>
+                </div>
+              </article>
+              <article class="card">
+                <div class="crd--img">
+                  <img src="./Assets/men.jpg" alt="Men's clothing collection" loading="lazy" />
+                </div>
+                <div class="crd--data">
+                  <h3 class="crd--title">Men</h3>
+                  <button class="crd--open" aria-label="Browse men's clothing">Shop Men</button>
+                </div>
+              </article>
+              <article class="card">
+                <div class="crd--img">
+                  <img src="./Assets/women.jpg" alt="Women's clothing collection" loading="lazy" />
+                </div>
+                <div class="crd--data">
+                  <h3 class="crd--title">Women</h3>
+                  <button class="crd--open" aria-label="Browse women's clothing">Shop Women</button>
+                </div>
+              </article>
+              <article class="card">
+                <div class="crd--img">
+                  <img src="./Assets/summer.jpg" alt="Summer clothing collection" loading="lazy" />
+                </div>
+                <div class="crd--data">
+                  <h3 class="crd--title">Summer</h3>
+                  <button class="crd--open" aria-label="Browse summer collection">Shop Summer</button>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="next" aria-label="Next categories">&#8250;</button>
+        </div>
+      </section>
+
+      <!-- Featured Products Section -->
+      <section class="featured-section" aria-label="Featured products">
+        <div class="container">
+          <h2 class="title">Featured Collections</h2>
+        </div>
+
+        <!-- Featured Products Slider -->
+        <div class="slider-container best-choice" role="region" aria-label="Featured products carousel">
+          <button class="preview-s" aria-label="Previous featured products">&#8249;</button>
+          <div class="crd--wrapper">
+            <div class="crd--container">
+              <article class="card">
+                <div class="crd--img">
+                  <img src="./Assets/slimFit.jpg" alt="Slim fit clothing collection" loading="lazy" />
+                </div>
+                <div class="crd--data">
+                  <h3 class="crd--title">Slim Fit</h3>
+                  <button class="crd--open" aria-label="Browse slim fit clothing">Shop Slim Fit</button>
+                </div>
+              </article>
+              <article class="card">
+                <div class="crd--img">
+                  <img src="./Assets/Blazers.jpg" alt="Professional blazers collection" loading="lazy" />
+                </div>
+                <div class="crd--data">
+                  <h3 class="crd--title">Blazers</h3>
+                  <button class="crd--open" aria-label="Browse blazers collection">Shop Blazers</button>
+                </div>
+              </article>
+              <article class="card">
+                <div class="crd--img">
+                  <img src="./Assets/winter.jpg" alt="Winter clothing collection" loading="lazy" />
+                </div>
+                <div class="crd--data">
+                  <h3 class="crd--title">Winter</h3>
+                  <button class="crd--open" aria-label="Browse winter collection">Shop Winter</button>
+                </div>
+              </article>
+              <article class="card">
+                <div class="crd--img">
+                  <img src="./Assets/Sport.jpg" alt="Sports and athletic wear collection" loading="lazy" />
+                </div>
+                <div class="crd--data">
+                  <h3 class="crd--title">Sports</h3>
+                  <button class="crd--open" aria-label="Browse sports wear">Shop Sports</button>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="next-s" aria-label="Next featured products">&#8250;</button>
+        </div>
+      </section>
+      <!-- Brand Partners Section -->
+      <section class="brand-section" aria-label="Brand partners">
+        <div class="container">
+          <h2 class="title">Our Brand Partners</h2>
+        </div>
+        <div class="Brand" role="img" aria-label="Brand partner logos">
+          <img class="img-b" src="./Assets/brand1.jpg" alt="Brand partner 1" loading="lazy" />
+          <img class="img-b" src="./Assets/brand2.jpg" alt="Brand partner 2" loading="lazy" />
+          <img class="img-b" src="./Assets/brand3.jpg" alt="Brand partner 3" loading="lazy" />
+          <img class="img-b" src="./Assets/brand4.jpg" alt="Brand partner 4" loading="lazy" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <div class="logo-box">
+            <img src="./Assets/logo.png" alt="Velvet Vogue Logo" />
+          </div>
+          <div class="social-icons" role="list" aria-label="Social media links">
+            <div class="icon" role="listitem">
+              <a href="#" aria-label="Follow us on Facebook">
+                <img src="./Assets/fb.png" alt="Facebook" />
+              </a>
+            </div>
+            <div class="icon" role="listitem">
+              <a href="#" aria-label="Contact us on WhatsApp">
+                <img src="./Assets/icons8-whatsapp-48.png" alt="WhatsApp" />
+              </a>
+            </div>
+            <div class="icon" role="listitem">
+              <a href="#" aria-label="Follow us on Telegram">
+                <img src="./Assets/icons8-telegram-logo.svg" alt="Telegram" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="./velvetVogue.html">Home</a>
+          <a href="./aboutUs.html">About Us</a>
+          <a href="./shop.html">Shop</a>
+          <a href="./login.html">My Account</a>
+        </nav>
+        <address class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Velvet Vogue</p>
+          <p>Colombo 11, Sri Lanka</p>
+          <p><a href="tel:+94110234546">+94-110-234-546</a></p>
+          <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+        </address>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Velvet Vogue - All Rights Reserved</p>
+      </div>
+    </footer>
+    <script type="Module" src="./Js/main.js"></script>
+  </body>
+</html>
+

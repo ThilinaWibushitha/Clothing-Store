@@ -1,0 +1,63 @@
+.title-login{
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+.log div{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(109, 109, 109, 0.38);
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.log .input-field {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.log input[type="text"],
+.log input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn{
+    padding: 10px;
+    background-color: #b30000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    margin-top: 15px;
+}
+
+.log button:hover {
+    background-color: #b30000;
+}
+
+.log span.psw a {
+    color: #8a8b8b91;
+    text-decoration: none;
+}
+
+.log span.psw a:hover {
+    text-decoration: underline;
+}
+.left{
+    align-self: self-start;
+    margin-top: 10px;
+}
+span{
+    margin-top: 15px;
+}

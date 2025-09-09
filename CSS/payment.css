@@ -1,0 +1,113 @@
+.buy_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 600px; 
+    width: 90%;
+    background-color: #686666af;
+    border-radius: 25px;
+}
+
+
+.buy_row {
+    display: flex;
+    justify-content: center;
+}
+/* Panel styles */
+.buy_panel {
+    padding: 20px;
+}
+
+.buy_panel-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.buy_cc-img {
+    display: block;
+    max-width: 80%;
+    margin: 10px auto;
+}
+
+/* Form styles */
+.buy_form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensures left alignment */
+    width: 100%;
+}
+
+.buy_label {
+    width: 100%; /* Matches the input width */
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: left; /* Aligns text to the left */
+}
+
+.buy_input {
+    width: 100%; /* Input takes full width */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buy_input:focus {
+    border-color: #007bff; /* Highlight color when focused */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.buy_form-row {
+    display: flex;
+    width: 100%;
+    gap: 15px; /* Use gap for spacing */
+}
+
+.buy_half-width {
+    width: 50%; /* Adjusted to ensure alignment */
+}
+
+/* Button styles */
+.buy_panel-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.buy_btn {
+    width: 70%;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy_btn:hover {
+    background-color: rgb(192, 22, 22);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .buy_form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .buy_half-width {
+        width: 100%;
+}
+}

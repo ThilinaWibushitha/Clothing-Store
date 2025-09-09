@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="icon" type="image/png" href="./Assets/logo.png" />
+    <link rel="stylesheet" href="./CSS/Main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="register-section">
+      <form action="http://localhost:3000/backend/insertdata.php" method="POST">
+        <div class="reg-form-container">
+          <h2 class="register-title">Register</h2>
+          <label for="first-name" class="form-label"><b>First Name</b></label>
+          <input
+            type="text"
+            placeholder="Enter First Name"
+            name="first-name"
+            id="first-name"
+            required
+          />
+          <label for="last-name" class="form-label"><b>Last Name</b></label>
+          <input
+            type="text"
+            placeholder="Enter Last Name"
+            name="last-name"
+            id="last-name"
+            required
+          />
+          <label for="user-address" class="form-label"><b>Address</b></label>
+          <textarea
+            placeholder="Enter Your Address"
+            rows="3"
+            name="user-address"
+            id="user-address"
+            required
+          ></textarea>
+          <label for="user-username" class="form-label"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="user-username"
+            id="user-username"
+            required
+          />
+          <label for="user-email" class="form-label"><b>Email</b></label>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            name="user-email"
+            id="user-email"
+            required
+          />
+          <label for="user-password" class="form-label"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="user-password"
+            id="user-password"
+            required
+          />
+          <label for="confirm-password" class="form-label"
+            ><b>Confirm Password</b></label
+          >
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            name="confirm-password"
+            id="confirm-password"
+            required
+          />
+          <label for="user-role" class="form-label"><b>Role</b></label>
+          <select name="user-role" id="user-role" required>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+          </select>
+          <!-- Buttons should be outside the <select> -->
+          <div class="button-group">
+            <button type="submit" class="register-btn">Register</button>
+            <button
+              type="button"
+              class="cancel-btn"
+              onclick="window.location.href='login.html';"
+            >
+              Cancel
+            </button>
+          </div>
+          <span id="reg-login-link"
+            ><a href="login.html">Already have an account? Login</a></span
+          >
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

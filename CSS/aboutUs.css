@@ -1,0 +1,107 @@
+.our-sec {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.our-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    margin: auto;
+}
+
+.our-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-img img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.our-text {
+    color: #fff;
+    text-align: left;
+    max-width: 50%;
+    margin-bottom: 294px;
+}
+
+.our-text h3 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.our-text p {
+    line-height: 1.6;
+    margin: 0;
+}
+.our-text-sec{
+    margin: auto;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+.our-story{
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff67;
+    border-radius: 20px;
+}
+.our-story h3{
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+.vision-mission-goals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+    margin-top: 150px;
+    width: 80%;
+}
+
+.vision-mission-goals-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 300px;
+    background-color: #ffffff6e;
+    color: #fff;
+    border-radius: 20px;
+    padding: 15px; /* Reduced padding */
+    text-align: center;
+}
+
+.icon-v img {
+    width: 120px; /* Reduced size */
+    height: 120px;
+    position: relative;
+    top: -60px; /* Adjusted position */
+    border-radius: 50%;
+}
+
+.card-v h3 {
+    margin-top: -40px; /* Pull heading closer to the icon */
+    margin-bottom: 10px; /* Spacing between heading and paragraph */
+    font-size: 1.5rem; /* Adjust size if needed */
+}
+
+.card-v p {
+    margin: 0; /* Remove extra margin */
+    font-size: 1rem; /* Adjust text size */
+    text-align: center;
+    line-height: 1.4; /* Improve readability */
+}

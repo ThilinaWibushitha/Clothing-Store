@@ -1,0 +1,96 @@
+/* Admin Container */
+#ad-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header for Admin */
+#admin-header {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Header for Registered Users */
+#user-header {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* User Table */
+#user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table Header */
+#table-header {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+
+#first-name-header, #last-name-header, #username-header, 
+#email-header, #address-header, #role-header, #actions-header {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+/* User Row Styling */
+#user-row- {
+    background-color: #f9f9f9;
+}
+
+#user-row-:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#user-row_ td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Input Fields */
+#firstName_, #lastName_, #email_, 
+#address_, #role_, #username_ {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    background-color: rgb(143, 141, 141);
+}
+
+/* Button Styling */
+.btn_cover{
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.btn_cover{
+    background-color: #dc3545;
+
+}
+
+.btn_cover:hover {
+    background-color: #c82333;
+}
+
+/* Select Dropdown */
+#role_ {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}

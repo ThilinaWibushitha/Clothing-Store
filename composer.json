@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mongodb/mongodb": "^1.20",
+        "stripe/stripe-php": "^16.4"
+    }
+}

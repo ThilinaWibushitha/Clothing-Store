@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="icon" type="image/png" href="./Assets/logo.png" />
+    <link rel="stylesheet" href="./CSS/Main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div>
+        <a href=""><img id="logo" src="./Assets/logo.png" alt="Home" /></a>
+      </div>
+      <div class="menu">
+        <a href="./velvetVogue.html">Home</a>
+        <a href="./aboutUs.html">About Us</a>
+        <a href="./shop.html">Shop</a>
+        <a href="">My Account</a>
+        <a href="">Cart</a>
+        <a href=""
+          ><img src="./Assets/icons8-cart-48.png" alt="Cart" id="cart"
+        /></a>
+        <input type="text" id="search" placeholder="Search" />
+        <button id="btn-search">
+          <img src="./Assets/icons8-search-30.png" alt="search" />
+        </button>
+      </div>
+    </nav>
+    <section>
+      <div class="container"><h2 class="title">Cart</h2></div>
+    </section>
+    <section class="cart-section">
+      <p id="empty-cart">Your cart is empty.</p>
+      <div id="cart-items">
+        <!-- Cart items will be dynamically inserted here -->
+      </div>
+      <div id="details">
+        <h4>
+          Total Price :<!--item * quntity-->
+          0
+        </h4>
+        <button id="clear-cart">Clear Cart</button>
+        <button id="buy-item">Buy</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <div class="logo-box">
+            <img src="./Assets/logo.png" alt="Logo" />
+          </div>
+          <div class="social-icons">
+            <div class="icon">
+              <a href="#"><img src="./Assets/fb.png" alt="Facebook" /></a>
+            </div>
+            <div class="icon">
+              <a href="#"
+                ><img src="./Assets/icons8-whatsapp-48.png" alt="Whatsapp"
+              /></a>
+            </div>
+            <div class="icon">
+              <a href="#"
+                ><img src="./Assets/icons8-telegram-logo.svg" alt="Telegram"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#"><h4>Home</h4></a>
+          <a href="#"><h4>About Us</h4></a>
+          <a href="#"><h4>Shop</h4></a>
+          <a href="#"><h4>My Account</h4></a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Velvet Vogue</p>
+          <p>Colombo 11.</p>
+          <p>+94-110-234-546</p>
+          <p>Monday - Friday</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&#169; 2024 - All Rights Reserved!</p>
+      </div>
+    </footer>
+    <script type="Module" src="./Js/main.js"></script>
+  </body>
+</html>

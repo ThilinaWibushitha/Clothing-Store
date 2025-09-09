@@ -1,0 +1,126 @@
+body {
+    justify-content: center;
+    align-items: center;
+  }
+#logo{
+    width: 5em;
+}
+#logo:hover{
+    transform: scale(1.1);
+}
+#cart{
+    width: 24px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+#btn-search{
+    border-width: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+#btn-search:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+#search{
+    border-width: 0px;
+    height: 25px;
+    color: #fff;
+}
+#search:focus {
+    border: none;
+    outline: none;
+}
+#search:hover{
+    transform: scale(1.1);
+}
+a:hover{
+    color: #808080;
+}
+#cart:hover{
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+@media (max-width: 768px) {
+    /* Adjust navbar layout */
+    .navbar {
+      padding: 15px 10px;
+    }
+  
+    /* Adjust menu links */
+    .menu {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    /* Adjust logo */
+    #logo {
+      width: 4em;
+      margin-bottom: 10px;
+    }
+  
+    /* Adjust cart icon size */
+    #cart {
+      width: 20px;
+    }
+  
+    /* Make search bar take full width */
+    #search {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    /* Adjust search button */
+    #btn-search {
+      margin-top: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjust navbar padding */
+    .navbar {
+      padding: 10px 5px;
+    }
+  
+    /* Reduce the gap between menu items */
+    .menu {
+      gap: 5px;
+    }
+  
+    /* Further reduce logo size */
+    #logo {
+      width: 3.5em;
+    }
+  
+    /* Reduce cart icon size */
+    #cart {
+      width: 18px;
+    }
+  
+    /* Make the search bar smaller */
+    #search {
+      font-size: 0.8rem;
+    }
+  
+    /* Adjust search button scale */
+    #btn-search {
+      transform: scale(0.9);
+    }
+  }
