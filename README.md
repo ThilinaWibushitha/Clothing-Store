@@ -221,12 +221,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **UI/UX Design**: Responsive and accessible design
 - **Testing**: Comprehensive test coverage
 
-## 📞 Support
-
-- **Email**: info@velvetvogue.com
-- **Website**: https://velvetvogue.com
-- **Issues**: [GitHub Issues](https://github.com/velvetvogue/ecommerce-platform/issues)
-
 ## 🔄 Version History
 
 - **v2.0.0**: Complete rewrite with modern practices
